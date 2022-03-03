@@ -4,7 +4,7 @@
     <div class="form">
             <?php
                 $max_height = 20;
-
+ 
                 for($j = 1; $j <= $max_height; $j++){
                     for($i = 1; $i < $j; $i++){
                         print '*';
