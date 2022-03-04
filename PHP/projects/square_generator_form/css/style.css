@@ -1,0 +1,43 @@
+/*  Created 04_03_2022  */
+
+body {
+    background-color: black;
+}
+
+
+.content-area {
+    display: flex;
+  justify-content: center;
+  flex-direction: column;  /* <--- I added this */
+  align-items: center;   /* <--- Change here */
+  height: 600px;
+}
+
+
+.content-area pre {
+    color: white;
+    text-align: center;
+}
+
+.content-area form {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.title {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+
+.square {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    gap: 50px;
+    font-size: 25px;
+}
