@@ -2,7 +2,7 @@
 session_start();
 $_SESSION["status"] = $_SESSION["status"] + 1;
 
-if($_SESSION["status"] == 2){
+if($_SESSION["status"] == 2 && $_SESSION["round"] <= 5){
     if(isset($_GET['play'])){
         if($_GET['play'] == 'Rock' || $_GET['play'] == 'Paper' || $_GET['play'] == 'Scissors'){
             $pick = $_GET['play'];
@@ -64,10 +64,17 @@ if($_SESSION["status"] == 2){
                     }
                 ?>
             </div>
-            <div class="try-again">
-                <a href="./play.php"><div class="try-again-button">
-                    <p class="try-again-text"><i class="icofont-loop"></i>Try again</p>
+            <div class="button">
+                <a href="./play.php"><div class="next-round-button">
+                    <p class="next-round-text"><i class="icofont-ui-play"></i> Next round</p>
                 </div></a>
+            </div>
+            <div class="try-again">
+                <a href="">
+                <div class="try-again-button">
+                    <p class="try-again-button-text">New Game</p>
+                </div>
+                </a>
             </div>
         </section>
         <footer>
@@ -79,8 +86,9 @@ if($_SESSION["status"] == 2){
     </html>
     <?php
 }
-
 else {
     header('Location: ./index.php');
 }
+$_SESSION["round"] = $_SESSION["round"] + 1;
+
 

@@ -82,7 +82,7 @@ footer {
 .title-play {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 60px;
+    font-size: 35px;
     margin: -100px 0 10px 0;
     text-align: center;
     text-shadow: rgb(0, 0, 0) 5px 0px 5px;
@@ -118,6 +118,18 @@ footer {
     height: 200px;
     background-color: #0f1e25;
     box-shadow: 2px 2px 10px 10px #0175285b;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 0.5s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
 .vs {
@@ -142,60 +154,101 @@ footer {
 .draw {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: #dbdfe0;
     text-shadow: 2px 0 0 rgb(255, 238, 0), 2px 2px 0 rgb(255, 238, 0), 0 2px 0 rgb(255, 238, 0), -2px 2px 0 rgb(255, 238, 0), -2px 0 0 rgb(255, 238, 0), -2px -2px 0 rgb(255, 238, 0), 0 -2px 0 rgb(255, 238, 0), 2px -2px 0 rgb(255, 238, 0);
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
 .win {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: #dbdfe0;
     text-shadow: 2px 0 0 rgb(16, 196, 0), 2px 2px 0 rgb(16, 196, 0), 0 2px 0 rgb(16, 196, 0), -2px 2px 0 rgb(16, 196, 0), -2px 0 0 rgb(16, 196, 0), -2px -2px 0 rgb(16, 196, 0), 0 -2px 0 rgb(16, 196, 0), 2px -2px 0 rgb(16, 196, 0);
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
 .loose {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: #dbdfe0;
     text-shadow: 2px 0 0 rgb(182, 1, 1), 2px 2px 0 rgb(182, 1, 1), 0 2px 0 rgb(182, 1, 1), -2px 2px 0 rgb(182, 1, 1), -2px 0 0 rgb(182, 1, 1), -2px -2px 0 rgb(182, 1, 1), 0 -2px 0 rgb(182, 1, 1), 2px -2px 0 rgb(182, 1, 1);
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
-.try-again {
+.button {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-.try-again-button {
-    width: 150px;
+.next-round-button {
+    width: 200px;
     height: 50px;
-    background-color: #0f1e2588;
+    background-color: #8acc31;
+    border-radius: 5px;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 0.5s infinite  alternate;
 }
 
-.try-again-button:hover {
-    width: 150px;
+.next-round-button:hover {
+    width: 200px;
     height: 50px;
-    background-color: #0f1e25;
+    background-color: #111a1d83;
     box-shadow: 2px 2px 10px 10px #0175285b;
+    border-radius: 5px;
 }
 
-.try-again-text {
+.next-round-text {
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
-    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.try-again {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
 .try-again a {
     text-decoration: none;
+}
+
+.try-again-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #545657a1;
+    border-radius: 5px;
+}
+
+.try-again-button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #1a1a1aad;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 10px #0175285b;
+}
+
+.try-again-button-text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

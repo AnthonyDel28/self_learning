@@ -1,3 +1,12 @@
+<?php
+session_start();
+$_SESSION["score"] = 0;
+$_SESSION["life"] = 4;
+$_SESSION["round"] = 1;
+$_SESSION["max_rounds"] = 4;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +25,7 @@
     <section class="button-area">
         <a href="./play.php">
             <div class="play-button">
-                <p class="text-button">Jouer maintenant !</p>
+                <p class="text-button">Play Now !</p>
             </div>
         </a>
     </section>

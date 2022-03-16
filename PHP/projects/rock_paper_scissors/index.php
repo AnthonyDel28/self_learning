@@ -27,6 +27,6 @@ db   8D Y8b  d8   .88.   db   8D db   8D `8b  d8' 88 `88. db   8D
 
 */
 
-require('./home.html');
+require('./home.php');
 
 ?>

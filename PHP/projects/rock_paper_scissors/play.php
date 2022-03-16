@@ -3,9 +3,8 @@ session_start();
 
 $_SESSION["status"] = 1;
 
-?>
-
-<!DOCTYPE html>
+if($_SESSION["round"] <= 5){?>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +20,7 @@ $_SESSION["status"] = 1;
         </div>
     </header>
     <section>
-        <p class="title-play">Choose your pick ...</p>
+        <p class="title-play">Round <?php print $_SESSION["round"]; ?></p>
         <div class="play-zone">
             <a href="result.php?play=Rock">
                 <div class="card">
@@ -49,4 +48,11 @@ $_SESSION["status"] = 1;
         </div>
     </footer>
 </body>
-</html>
+</html><?
+}
+else {
+    header('Location: ./index.php');
+}
+
+?>
+
