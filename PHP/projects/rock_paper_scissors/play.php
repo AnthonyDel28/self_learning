@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+$_SESSION["status"] = 1;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,26 +23,25 @@
     <section>
         <p class="title-play">Choose your pick ...</p>
         <div class="play-zone">
-            <a href="result.php?play=rock">
+            <a href="result.php?play=Rock">
                 <div class="card">
-                    <p class="card-title">ROCK</p>
+                    <p class="card-title">Rock</p>
                     <img src="./img/rock.png" width="100px">
                 </div>
             </a>
-            <a href="result.php?play=paper">
+            <a href="result.php?play=Paper">
                 <div class="card">
-                    <p class="card-title">PAPER</p>
+                    <p class="card-title">Paper</p>
                     <img src="./img/paper.png" width="100px">
                 </div>
             </a>
-            <a href="result.php?play=scissors">
+            <a href="result.php?play=Scissors">
                 <div class="card">
-                    <p class="card-title">SCISSORS</p>
+                    <p class="card-title">Scissors</p>
                     <img src="./img/scissors.png" width="100px">
                 </div>
             </a>
         </div>
-        
     </section>
     <footer>
         <div>
