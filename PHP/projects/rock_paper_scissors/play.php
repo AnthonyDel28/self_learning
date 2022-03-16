@@ -42,6 +42,26 @@ if($_SESSION["round"] <= 5){?>
             </a>
         </div>
     </section>
+    <section>
+        <div class="play-stats">
+            <div class="play-stats-life">
+                <p class="play-stats-text">Life points :</p>
+                <?php
+                    $_life_points = $_SESSION["life"];
+                    for($i = $_life_points; $i >= 1; $i--){
+                        print '<img src="./img/hearth.png" alt="">';
+                    }
+                    
+                ?>
+            </div>
+            <div class="play-stats-score">
+                <div class="play-stats-score-title">
+                    <img src="./img/medail.png" alt=""><p class="play-stats-text">Score :</p>
+                </div>
+                <p class="play-stats-score-text"><?php print $_SESSION["score"] ?> points</p>
+            </div>
+        </div>
+    </section>
     <footer>
         <div>
             <p class="rights">Created by Anthony.D (Sudent Web Developer) 2021-2022</p>

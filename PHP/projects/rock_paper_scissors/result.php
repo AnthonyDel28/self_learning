@@ -57,10 +57,11 @@ if($_SESSION["status"] == 2 && $_SESSION["round"] <= 5){
                     }
                     else if(($pick == 'Rock' && $choices[$adverse_choice] == 'Scissors') || ($pick == 'Scissors' && $choices[$adverse_choice] == 'Paper') || ($pick == 'Paper' && $choices[$adverse_choice] == 'Rock')){
                         print '<p class="win">YOU WIN !</p>';
-    
+                        $_SESSION["score"] = $_SESSION["score"] + 10;
                     }
                     else {
                         print '<p class="loose">YOU LOST !</p>';
+                        $_SESSION["life"] = $_SESSION["life"] -1;
                     }
                 ?>
             </div>

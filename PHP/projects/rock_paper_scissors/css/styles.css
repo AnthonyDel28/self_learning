@@ -132,6 +132,46 @@ footer {
     100% { transform: translateY(-10px); }
 }
 
+
+.play-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.play-stats-life img,
+.play-stats-score img {
+    width: 30px;
+}
+
+.play-stats-score {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.play-stats-score-text {
+    font-size: 20px;
+    color: #cae002;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-left: 25px;
+}
+
+.play-stats-score-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.play-stats-text {
+    font-size: 25px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
 .vs {
     display: flex;
     flex-direction: column;
