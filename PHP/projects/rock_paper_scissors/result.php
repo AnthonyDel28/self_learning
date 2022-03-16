@@ -79,6 +79,7 @@ if($_SESSION["status"] == 2){
     </html>
     <?php
 }
+
 else {
     header('Location: ./index.php');
 }
