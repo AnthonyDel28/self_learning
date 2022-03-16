@@ -40,27 +40,27 @@ if($_SESSION["status"] == 2){
             <p class="title-play">Result</p>
             <div class="play-zone">
                     <div class="card">
-                        <p class="card-title"><? print $_GET['play']; ?></p>
-                        <img src="./img/<? print $_GET['play'] ?>.png" width="100px">
+                        <p class="card-title"><?php print $_GET['play']; ?></p>
+                        <img src="./img/<?php print $_GET['play'] ?>.png" width="100px">
                     </div>   
                 <p class="vs">vs</p>
                     <div class="card">
-                        <p class="card-title"><? print $choices[$adverse_choice] ?></p>
-                        <img src="./img/<? print $choices[$adverse_choice] ?>.png" width="100px">
+                        <p class="card-title"><?php print $choices[$adverse_choice] ?></p>
+                        <img src="./img/<?php print $choices[$adverse_choice] ?>.png" width="100px">
                     </div>
             </div>
             <div class="result-text">
-                <? 
+                <?php
                     if($pick == $choices[$adverse_choice]){
-                        print "<p class='draw'>DRAW !</p>";
+                        print '<p class="draw">DRAW !</p>';
     
                     }
                     else if(($pick == 'Rock' && $choices[$adverse_choice] == 'Scissors') || ($pick == 'Scissors' && $choices[$adverse_choice] == 'Paper') || ($pick == 'Paper' && $choices[$adverse_choice] == 'Rock')){
-                        print "<p class='win'>YOU WIN !</p>";
+                        print '<p class="win">YOU WIN !</p>';
     
                     }
                     else {
-                        print "<p class='loose'>YOU LOST !</p>";
+                        print '<p class="loose">YOU LOST !</p>';
                     }
                 ?>
             </div>
