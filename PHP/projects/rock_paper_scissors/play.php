@@ -68,7 +68,7 @@ if($_SESSION["round"] <= 5){?>
         </div>
     </footer>
 </body>
-</html><?
+</html><?php
 }
 else {
     header('Location: ./index.php');
