@@ -70,8 +70,8 @@ if($_SESSION["round"] <= 5){?>
 </body>
 </html><?php
 }
-else {
-    header('Location: ./index.php');
+elseif($_SESSION["round"] = 6) {
+    header('Location: ./end_game.php');
 }
 
 ?>

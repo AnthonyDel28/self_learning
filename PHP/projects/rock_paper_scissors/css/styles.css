@@ -292,3 +292,46 @@ footer {
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -70px;
+}
+
+.scoreboard-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35%;
+    height: 350px;
+    background-color: #0f1e25a1;
+}
+
+.scoreboard-box img {
+    margin-top: 25px;
+}
+
+.scoreboard-box-title {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: -30px;
+}
+
+.scoreboard-box-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.scoreboard-box-content-text {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+
+}

@@ -1,9 +1,6 @@
-<?php
+<?php 
+
 session_start();
-$_SESSION["score"] = 0;
-$_SESSION["life"] = 4;
-$_SESSION["round"] = 1;
-$_SESSION["max_rounds"] = 5;
 
 ?>
 
@@ -22,12 +19,14 @@ $_SESSION["max_rounds"] = 5;
             <img src="./img/logo.png" alt="">
         </div>
     </header>
-    <section class="button-area">
-        <a href="./play.php">
-            <div class="play-button">
-                <p class="text-button">Play Now !</p>
+    <section class="scoreboard">
+            <div class="scoreboard-box">
+                <p class="scoreboard-box-title">Congratulations !</p>
+                <div class="scoreboard-box-content">
+                    <img src="./img/gnome.png" width="170px">
+                    <p class="scoreboard-box-content-text"> <img src="./img/medail.png" width="40px" >Your score: </p>
+                </div>
             </div>
-        </a>
     </section>
     <footer>
         <div>

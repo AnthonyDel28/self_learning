@@ -14,8 +14,8 @@ if($_SESSION["status"] == 2 && $_SESSION["round"] <= 5){
     else {
         header('Location: ./index.php');
     }
-    
-    
+
+
     $choices = array("Rock", "Paper", "Scissors");
     $adverse_choice = array_rand($choices);
     
@@ -67,7 +67,14 @@ if($_SESSION["status"] == 2 && $_SESSION["round"] <= 5){
             </div>
             <div class="button">
                 <a href="./play.php"><div class="next-round-button">
-                    <p class="next-round-text"><i class="icofont-ui-play"></i> Next round</p>
+                    <?php 
+                        if($_SESSION["round"] <= 4){
+                            print '<p class="next-round-text"><i class="icofont-ui-play"></i> Next round</p>';
+                        }
+                        else {
+                            print '<p class="next-round-text"><i class="icofont-double-right"></i> Next </p>';
+                        }
+                    ?>
                 </div></a>
             </div>
             <div class="try-again">
@@ -90,6 +97,6 @@ if($_SESSION["status"] == 2 && $_SESSION["round"] <= 5){
 else {
     header('Location: ./index.php');
 }
-$_SESSION["round"] = $_SESSION["round"] + 1;
 
+$_SESSION["round"] = $_SESSION["round"] + 1;
 
