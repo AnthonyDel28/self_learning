@@ -3,7 +3,7 @@ session_start();
 
 $_SESSION["status"] = 1;
 
-if($_SESSION["round"] <= 5){?>
+if($_SESSION["round"] <= 10){?>
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +70,7 @@ if($_SESSION["round"] <= 5){?>
 </body>
 </html><?php
 }
-elseif($_SESSION["round"] = 6) {
+elseif($_SESSION["round"] = 11) {
     header('Location: ./end_game.php');
 }
 

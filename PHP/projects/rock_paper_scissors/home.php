@@ -3,7 +3,7 @@ session_start();
 $_SESSION["score"] = 0;
 $_SESSION["life"] = 4;
 $_SESSION["round"] = 1;
-$_SESSION["max_rounds"] = 5;
+$_SESSION["max_rounds"] = 10;
 
 ?>
 

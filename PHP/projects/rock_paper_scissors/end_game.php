@@ -21,12 +21,34 @@ session_start();
     </header>
     <section class="scoreboard">
             <div class="scoreboard-box">
+                <div class="scoreboard-box-sub">
                 <p class="scoreboard-box-title">Congratulations !</p>
                 <div class="scoreboard-box-content">
-                    <img src="./img/gnome.png" width="170px">
+                    <img src="./img/gnome.png" width="170px" class="gnome">
                     <p class="scoreboard-box-content-text"> <img src="./img/medail.png" width="40px" >Your score: </p>
+                    <p class="score"><?php print $_SESSION["score"]; ?> points</p>
+                </div>
                 </div>
             </div>
+    </section>
+    <section>
+        <div class="three-buttons">
+            <a href="./home.php">
+                <div class="try-again-button">
+                    <p class="try-again-button-text">New Game</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="try-again-button">
+                    <p class="try-again-button-text">Ladder</p>
+                </div>
+            </a>
+            <a href="https://github.com/AnthonyDel28" target="_blank">
+                <div class="try-again-button">
+                    <p class="try-again-button-text">Github</p>
+                </div>
+            </a>
+        </div>
     </section>
     <footer>
         <div>

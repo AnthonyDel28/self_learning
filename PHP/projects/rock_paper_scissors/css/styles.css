@@ -285,6 +285,8 @@ footer {
     background-color: #1a1a1aad;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 10px #0175285b;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 0.5s infinite  alternate;
 }
 
 .try-again-button-text {
@@ -308,9 +310,15 @@ footer {
     height: 350px;
     background-color: #0f1e25a1;
 }
-
+background-image: url('../img/party.png'); 
 .scoreboard-box img {
     margin-top: 25px;
+
+}
+
+.gnome {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 0.5s infinite  alternate;
 }
 
 .scoreboard-box-title {
@@ -323,6 +331,7 @@ footer {
 
 .scoreboard-box-content {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -335,3 +344,27 @@ footer {
     font-size: 35px;
 
 }
+
+.score {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 230, 0);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.three-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 100px;
+}
+
+.three-buttons a {
+    text-decoration: none;
+}
+
+

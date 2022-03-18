@@ -2,7 +2,7 @@
 session_start();
 $_SESSION["status"] = $_SESSION["status"] + 1;
 
-if($_SESSION["status"] == 2 && $_SESSION["round"] <= 5){
+if($_SESSION["status"] == 2 && $_SESSION["round"] <= 10){
     if(isset($_GET['play'])){
         if($_GET['play'] == 'Rock' || $_GET['play'] == 'Paper' || $_GET['play'] == 'Scissors'){
             $pick = $_GET['play'];
