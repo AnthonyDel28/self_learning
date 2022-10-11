@@ -1,0 +1,19 @@
+/* Created 11-10-2022 */
+
+body,
+*{
+    margin: 0;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/map.png");
+    background-size: cover;
+}
+
+#car3 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
