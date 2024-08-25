@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "adresse": "10 Rue de la Paix, Paris",
+    "email": "jean.dupont@example.com",
+    "gsm": "+33 6 12 34 56 78"
+  },
+  {
+    "id": 2,
+    "adresse": "15 Avenue des Champs-Élysées, Paris",
+    "email": "sophie.martin@example.com",
+    "gsm": "+33 6 23 45 67 89"
+  },
+  {
+    "id": 3,
+    "adresse": "20 Boulevard Saint-Germain, Paris",
+    "email": "luc.durand@example.com",
+    "gsm": "+33 6 34 56 78 90"
+  },
+  {
+    "id": 4,
+    "adresse": "25 Place de la Concorde, Paris",
+    "email": "marie.leroy@example.com",
+    "gsm": "+33 6 45 67 89 01"
+  },
+  {
+    "id": 5,
+    "adresse": "30 Quai de la Tournelle, Paris",
+    "email": "paul.bernard@example.com",
+    "gsm": "+33 6 56 78 90 12"
+  },
+  {
+    "id": 6,
+    "adresse": "35 Rue de Rivoli, Paris",
+    "email": "claire.moreau@example.com",
+    "gsm": "+33 6 67 89 01 23"
+  },
+  {
+    "id": 7,
+    "adresse": "40 Avenue Montaigne, Paris",
+    "email": "pierre.roux@example.com",
+    "gsm": "+33 6 78 90 12 34"
+  },
+  {
+    "id": 8,
+    "adresse": "45 Rue du Faubourg Saint-Honoré, Paris",
+    "email": "emma.simon@example.com",
+    "gsm": "+33 6 89 01 23 45"
+  },
+  {
+    "id": 9,
+    "adresse": "50 Boulevard Haussmann, Paris",
+    "email": "lucas.michel@example.com",
+    "gsm": "+33 6 90 12 34 56"
+  },
+  {
+    "id": 10,
+    "adresse": "55 Rue La Fayette, Paris",
+    "email": "anna.garcia@example.com",
+    "gsm": "+33 6 01 23 45 67"
+  }
+]
